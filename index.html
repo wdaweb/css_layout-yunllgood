@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021職訓作業 CSS-Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: linear-gradient(transparent 80%, rgba(0, 0, 0, 0.3) 100%);
+        }
+
+        .container {
+            width: 1200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            width: 300px;
+            height: 500px;
+            position: relative;
+            float: left;
+            transition-duration: 1s;
+        }
+
+        .box:hover {
+            width: 300px;
+            transform: translateY(-100px);
+        }
+
+        .reflect1 {
+            width: 300px;
+            height: 500px;
+            background: linear-gradient(90deg, white 90%, #eee);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            -webkit-box-reflect: below -1px linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.5));
+        }
+
+        .reflect2 {
+            width: 300px;
+            height: 500px;
+            background: linear-gradient(90deg, #eee 0%, white 10%, white 90%, #eee);
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            -webkit-box-reflect: below -1px linear-gradient(transparent, transparent 50%, rgba(255, 255, 255, 0.5));
+        }
+
+        .img {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .word {
+            width: 250px;
+            height: 250px;
+            color: gray;
+            position: absolute;
+            left: 50%;
+            top: 70%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="reflect1"></div>
+            <img src="https://picsum.photos/100/100/?random=1" class="img">
+            <p class="word">
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+            </p>
+        </div>
+        <div class="box">
+            <div class="reflect2"></div>
+            <img src="https://picsum.photos/100/100/?random=2" class="img">
+            <p class="word">
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+            </p>
+        </div>
+        <div class="box">
+            <div class="reflect2"></div>
+            <img src="https://picsum.photos/100/100/?random=3" class="img">
+            <p class="word">
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+            </p>
+        </div>
+        <div class="box">
+            <div class="reflect2"></div>
+            <img src="https://picsum.photos/100/100/?random=4" class="img">
+            <p class="word">
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+                忍不住，差不多休閒身邊可愛好處私服不然下降，下午權威小時印刷，適應幫忙開發者大會，大連規模，應當不。
+            </p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
